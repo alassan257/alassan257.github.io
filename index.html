@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulaire de Connexion</title>
+    <script type="text/javascript" src="js/main.js"></script>
     <style>
         /* Styles globaux */
         body {
@@ -174,11 +175,28 @@
         .footer a:hover {
             color: #750202; /* Couleur de survol des liens du footer */
         }
+
+        /* Styles pour l'en-tête du formulaire */
+        .form-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .form-header img {
+            margin-right: 15px;
+        }
+
+        .form-header h1 {
+            margin: 0;
+            font-size: 24px;
+            color: #980303;
+        }
     </style>
 </head>
 <body>
     <div class="navbar">
-        <div class="title">GGA</div>
+        <div class="title">GGA RDC</div>
         <ul class="menu">
             <li><a href="#">Accueil</a></li>
             <li><a href="#">Service</a></li>
@@ -191,6 +209,10 @@
     </div>
 
     <div class="form-container">
+        <div class="form-header">
+            <img src="img/cloud.png" alt="GGA Cloud" width="50">
+            <h1>GGA Cloud</h1>
+        </div>
         <h2>Connexion</h2>
         <form id="loginForm">
             <div class="error" id="error"></div>
@@ -201,7 +223,7 @@
     </div>
 
     <div class="footer">
-        <p>&copy; 2024 GGA. Tous droits réservés.</p>
+        <p>&copy; 2024 GGA SA. Tous droits réservés.</p>
         <p><a href="#">Politique de confidentialité</a> | <a href="#">Conditions d'utilisation</a></p>
     </div>
 
