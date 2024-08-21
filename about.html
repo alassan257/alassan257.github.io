@@ -21,6 +21,7 @@
         /* Styles pour la barre de navigation */
         .navbar {
             display: flex;
+            flex-wrap: wrap;
             justify-content: space-between;
             align-items: center;
             padding: 15px 30px;
@@ -31,7 +32,7 @@
         }
 
         .navbar .title {
-            font-size: 28px;
+            font-size: 24px;
             font-weight: bold;
             letter-spacing: 1px;
         }
@@ -44,13 +45,13 @@
         }
 
         .navbar .menu li {
-            margin: 0 15px;
+            margin: 0 10px;
         }
 
         .navbar .menu a {
             color: white;
             text-decoration: none;
-            font-size: 18px;
+            font-size: 16px;
             transition: color 0.3s;
         }
 
@@ -65,13 +66,13 @@
         }
 
         .navbar .buttons a {
-            margin-left: 15px;
-            padding: 10px 20px;
+            margin-left: 10px;
+            padding: 8px 15px;
             border-radius: 5px;
             color: white;
             text-decoration: none;
             background: #980303; /* Couleur de fond des boutons */
-            font-size: 16px;
+            font-size: 14px;
             transition: background-color 0.3s;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
         }
@@ -83,27 +84,14 @@
         /* Styles pour le conteneur du contenu principal */
         .container {
             flex: 1;
-            width: 80%;
+            width: 90%;
             max-width: 1200px;
             margin: auto;
-            padding: 40px;
+            padding: 20px;
             background: rgba(255, 255, 255, 0.9); /* Fond blanc semi-transparent */
             border-radius: 10px;
             box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
             backdrop-filter: blur(8px); /* Flou de fond */
-            /* animation: fadeIn 1s ease-out; */
-            z-index: 1000;
-        }
-
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-                transform: translateY(-30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
         }
 
         h1, h2 {
@@ -112,13 +100,13 @@
         }
 
         h1 {
-            font-size: 36px;
+            font-size: 32px;
             border-bottom: 2px solid #980303; /* Ligne sous le titre */
             padding-bottom: 10px;
         }
 
         h2 {
-            font-size: 28px;
+            font-size: 24px;
             border-bottom: 1px solid #ddd; /* Ligne sous les sous-titres */
             padding-bottom: 10px;
             margin-bottom: 20px;
@@ -155,6 +143,69 @@
 
         footer a:hover {
             color: #750202; /* Couleur de survol des liens du footer */
+        }
+
+        /* Media Queries pour les écrans plus petits */
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .navbar .title {
+                font-size: 20px;
+            }
+
+            .navbar .menu {
+                flex-direction: column;
+                width: 100%;
+                margin-top: 10px;
+            }
+
+            .navbar .menu li {
+                margin: 5px 0;
+            }
+
+            .navbar .buttons {
+                margin-top: 10px;
+            }
+
+            .navbar .buttons a {
+                font-size: 12px;
+                padding: 6px 12px;
+            }
+
+            .container {
+                width: 100%;
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 28px;
+            }
+
+            h2 {
+                font-size: 20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .navbar .menu a {
+                font-size: 14px;
+            }
+
+            .navbar .buttons a {
+                font-size: 10px;
+                padding: 4px 8px;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+
+            h2 {
+                font-size: 18px;
+            }
         }
     </style>
 </head>
@@ -193,8 +244,7 @@
                 <p>Email : <a href="mailto:rdc@assurancegga.cd">rdc@assurancegga.cd</a></p>
                 <p>Téléphone : +243 818 896 969</p>
                 <p>Call center : +243 99 6084 636, 99 6084 637</p>
-                <p>Adresse Kinshasa: Boulevard du 30 juin. Immeuble Le  66, 2ème étage. Réf: En diagonale de la CNSS, Blanchisserie 5 à Sec.
-                </p>
+                <p>Adresse Kinshasa: Boulevard du 30 juin. Immeuble Le 66, 2ème étage. Réf: En diagonale de la CNSS, Blanchisserie 5 à Sec.</p>
             </address>
         </section>
     </div>
